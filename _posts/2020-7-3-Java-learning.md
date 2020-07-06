@@ -82,19 +82,19 @@ description: Java 学习
 
 ​	在Java中数据类型分为基本数据类型和引用数据类型，其中基本数据类型有八种，除了这八种外其他所有类型均为引用数据类型。
 
-![image-20200616174229258](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616174229258.png)
+![image-20200616174229258](typora-user-images/image-20200616174229258.png)
 
 ##### 整数型：byte short int long 
 
 ​	java的整形常量默认int型，声明long型常量需在值后面加"l"或"L"  e.g. long i = 3L
 
-![image-20200616174640380](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616174640380.png)
+![image-20200616174640380](typora-user-images/image-20200616174640380.png)
 
 ##### 浮点型 float double 
 
 ​	浮点型常量默认double型，声明float型常量需在值的后面加"f"或"F
 
-![image-20200616180723424](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616180723424.png)
+![image-20200616180723424](typora-user-images/image-20200616180723424.png)
 
 
 
@@ -122,7 +122,7 @@ description: Java 学习
 
 ​	String s0 = "hello";  String s1 = "hello"; 仅在内存中存储一个hello，两个变量名去引用hello
 
-![image-20200616202817743](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616202817743.png)
+![image-20200616202817743](typora-user-images/image-20200616202817743.png)
 
 ​	假设“hello”的内存地址为xxxxx,声明s0变量时，给s0赋值实际上是让s0变量引用"hello"的内存地址xxxxx;当我们再声明变量s1为"hello"时，实际上是直接把已存在的"hello"的内存地址给s1引用。
 
@@ -132,7 +132,7 @@ description: Java 学习
 
 - 自动类型转换：容量小的类型自动转化为容量大的类型（小类型可以赋值给大类型，反之不可以）         e.g. int i = 0; byte b = i; 此语法会报异常，此类异常称为编译期异常。
 
-    ![image-20200616210345822](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616210345822.png)
+    ![image-20200616210345822](typora-user-images/image-20200616210345822.png)
 
 - 多种数据类型参与运算时，系统先将所有数据转化为最大容量的类型再进行运算。
 
@@ -142,7 +142,7 @@ description: Java 学习
 
 - 任何基本类型的值与字符串值进行连接（加法）运算时，全部转化为字符串型。                                  e.g. String str = “”+1+2+3；输出123     但 String str = 1+2+3；会报错。而String str = 1+2+“a”+3输出的是3a3
 
-- ![image-20200616212207956](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616212207956.png)
+- ![image-20200616212207956](typora-user-images/image-20200616212207956.png)
 
 - char类型在进行运算时，转换为ASCII码的值后再以数字参与运算，此时为int型。
 
@@ -162,7 +162,7 @@ description: Java 学习
 
 ​	用于计算数字，规则与数学一致。
 
-![image-20200616220808809](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616220808809.png)
+![image-20200616220808809](typora-user-images/image-20200616220808809.png)
 
 ​	注意事项：
 
@@ -200,7 +200,7 @@ description: Java 学习
 
 ​	输出结果均为 Boolean 型。
 
-![image-20200616231145272](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616231145272.png)
+![image-20200616231145272](typora-user-images/image-20200616231145272.png)
 
 ## Day 03  基础语句 Part 2
 
@@ -210,7 +210,7 @@ description: Java 学习
 
 ​	& 逻辑与  | 逻辑或  ！ 逻辑非        && 短路与  || 短路或  ^ 逻辑异或
 
-![image-20200617091132944](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200617091132944.png)
+![image-20200617091132944](typora-user-images/image-20200617091132944.png)
 
 - 逻辑运算符用于连接布尔型表达式，在Java中不可以写成 3<x<6，应写成 x>3 & x<6。
 - & 与 && 的区别：单 & 时左边无论真假，右边都参与运算；双 && 时若左边为真，右边参与运算，若为假，右边不运算。e.g.  i != 0 && ++k 此类语句可以看出差别。
@@ -224,17 +224,17 @@ description: Java 学习
 
 ​	负数的二进制表示：补码（负数的二进制）= 反码+1，反码即为正数的0 1互换。负数和某正数具有相同的二进制表示，但由于有数据类型的范围限制，该正数已经超出范围，故不会引起混乱。
 
-![image-20200617102023781](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200617102023781.png)
+![image-20200617102023781](typora-user-images/image-20200617102023781.png)
 
 ​	注：没有 <<<
 
 ​	区别>> 与 >>>：仅在对负数操作时有区别。
 
-![image-20200617104606123](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200617104606123.png)
+![image-20200617104606123](typora-user-images/image-20200617104606123.png)
 
 ​	以&为例：
 
-![image-20200617103816779](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200617103816779.png)
+![image-20200617103816779](typora-user-images/image-20200617103816779.png)
 
 #### 三目（元）运算符
 
@@ -246,7 +246,7 @@ description: Java 学习
 
 #### 运算符优先级
 
-​        	![image-20200617112321242](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200617112321242.png)
+​        	![image-20200617112321242](typora-user-images/image-20200617112321242.png)
 
 ​	只有单目运算符、三元运算符和赋值运算符是从右向左运算。结合性指的是同一组内的优先级顺序从高到低排列。
 
@@ -399,7 +399,7 @@ description: Java 学习
 
 ​	Java代码世界由诸多不同功能的类组成，类中包含属性（成员变量，Field）和行为（成员方法，函数，Method）。定义类即为定义类中的成员（成员变量与成员方法）
 
-![image-20200618210058651](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200618210058651.png)
+![image-20200618210058651](typora-user-images/image-20200618210058651.png)
 
 ### 类的语法格式
 
@@ -439,7 +439,7 @@ description: Java 学习
 - 类变量：静态的，不需要类实例化为对象即可使用，直接可以通过**类名**.属性（注意与一般的**对象**.属性区分！！）的方式直接调用。
 - 代码块局部变量：在类里直接写一个大括号，在该大括号里定义的变量
 
-![image-20200618224038073](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200618224038073.png)
+![image-20200618224038073](typora-user-images/image-20200618224038073.png)
 
 ##### 成员变量（属性）与局部变量的区别
 
@@ -510,7 +510,7 @@ description: Java 学习
 
 #### JVM内存模型
 
-![image-20200619182944050](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200619182944050.png)
+![image-20200619182944050](typora-user-images/image-20200619182944050.png)
 
 ​	以 Person p = new Person 为例：引用对象首先在堆中生成一个new Person()对象，同时对应一个地址（如：BE95000）。而栈中储存的是堆中的地址BE95000，此时栈中对应有一个地址（如AG84300），该地址即为引用对象p的地址。
 
@@ -546,7 +546,7 @@ description: Java 学习
 
 Java 中的包：
 
-![image-20200619224915852](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200619224915852.png)
+![image-20200619224915852](typora-user-images/image-20200619224915852.png)
 
 ### 面向对象的特征之一：封装与隐藏
 
@@ -558,7 +558,7 @@ Java 中的包：
 
 ​	权限修饰符用于类的成员定义前，限定对象对该类成员的访问权限。
 
-![image-20200619232239103](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200619232239103.png)
+![image-20200619232239103](typora-user-images/image-20200619232239103.png)
 
 ​	对于class的权限修饰只能用public和default（缺省）。public类可在任意地方被使用，default类只可以被**同一个包**内部的类访问
 
@@ -621,7 +621,7 @@ Java 中的包：
 
 ​	继承的存在是为了避免代码的繁琐型，避免不必要的重复,同时让类与类之间产生了关系，提供了多态的前提 。注意，子类不是父类的子集，是父类的扩展
 
-![image-20200620201145731](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200620201145731.png)
+![image-20200620201145731](typora-user-images/image-20200620201145731.png)
 
 ​	语法：class Subclass extends Superclass()    示例代码参见 [Student.java](Day 07\Student.java) 
 
@@ -671,17 +671,17 @@ Java 中的包：
 
 ### this 和 super 的区别
 
-![image-20200620221545445](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200620221545445.png)
+![image-20200620221545445](typora-user-images/image-20200620221545445.png)
 
 ​	在子类中，通过this或是super调用构造器，只能使用一个，因为都要占据第一行。
 
 ### 简单类对象的实例化过程
 
-![image-20200620222232953](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200620222232953.png)
+![image-20200620222232953](typora-user-images/image-20200620222232953.png)
 
 ### 子类对象的实例化过程
 
-![image-20200620223610150](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200620223610150.png)
+![image-20200620223610150](typora-user-images/image-20200620223610150.png)
 
 ### 面向对象的特征之三：多态性
 
@@ -701,7 +701,7 @@ Java 中的包：
 
 #### 虚拟方法的调用
 
-![image-20200621090458109](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200621090458109.png)
+![image-20200621090458109](typora-user-images/image-20200621090458109.png)
 
 ​	动态绑定：编译时e为Person类型，而方法是在运行时确定的，所以调用的是Student类中的getInfo()方法。
 
@@ -719,7 +719,7 @@ Java 中的包：
 
 #### 多态性的应用
 
-![image-20200621092633880](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200621092633880.png)
+![image-20200621092633880](typora-user-images/image-20200621092633880.png)
 
 ### instanceof 操作符
 
@@ -737,7 +737,7 @@ Java 中的包：
 
 ​	Object类中的主要方法：
 
-![image-20200621111525982](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200621111525982.png)
+![image-20200621111525982](typora-user-images/image-20200621111525982.png)
 
 ​	 System.out.println(p.toString());  打印当前对象的内存地址
 
@@ -763,7 +763,7 @@ Java 中的包：
 
 ### String 对象的创建
 
-![image-20200621214702698](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200621214702698.png)
+![image-20200621214702698](typora-user-images/image-20200621214702698.png)
 
 ​	第一种方法创建的对象用==判断，返回true，此方法要比第二种方法省内存。用第二种方法创建的对象用==判断返回false，用equals判断为true。
 
@@ -775,7 +775,7 @@ Java 中的包：
 
 ​	包装类是针对八种基本数据类型定义的响应的引用类型，有类的特点，可以调用类中的方法。使用时可以传入数字也可传入字符串：如Integer i = new Integer("111");也可以运行。
 
-![image-20200622091301654](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200622091301654.png)
+![image-20200622091301654](typora-user-images/image-20200622091301654.png)
 
 ​	装箱：基本数据类型包装成包装类
 
@@ -921,7 +921,7 @@ Java 中的包：
 
     接口的用处：灵活添加抽象方法
 
-![image-20200622234549874](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200622234549874.png)
+![image-20200622234549874](typora-user-images/image-20200622234549874.png)
 
 ​	父类需要稳定的抽象，因为它会影响到全部子类，故要通过接口进行改动以扩展方法，令需要的子类自行实现。示例代码参见 [Person1.java](Day 09\Person1.java)  [Cooking.java](Day 09\Cooking.java)  [Sing.java](Day 09\Sing.java)  [SCTeacher.java](Day 09\SCTeacher.java) （描述了会唱歌的厨子是一个老师的类）。可以用接口new出一个新对象，如此例中可以Cooking c = new SCTeacher();，此时**只能访问cooking中的方法**。（体现了对象的多态）
 
@@ -931,7 +931,7 @@ Java 中的包：
 
 ​	示例代码参见 [BWM.java](Day 09\BWM.java)  [BWMFactory.java](Day 09\BWMFactory.java)  [Test3.java](Day 09\Test3.java) 。对BWM做的改动不会影响到Test3的代码，只需要改动BWMFactory中的部分代码。new对象在工厂中进行，相当于用BWMFactory做了缓冲和隔离，避免开发人员不同造成的上层代码改掉导致下层代码必须跟着改的问题，实际类名的改变不影响其他合作开发人员的编程。
 
-![image-20200623093823866](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623093823866.png)
+![image-20200623093823866](typora-user-images/image-20200623093823866.png)
 
 ### 类的成员之五：内部类 
 
@@ -949,7 +949,7 @@ Java 中的包：
 
 ### 面向对象总结
 
-![image-20200623111100653](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623111100653.png)
+![image-20200623111100653](typora-user-images/image-20200623111100653.png)
 
 ## Day 10 异常处理与集合
 
@@ -961,7 +961,7 @@ Java 中的包：
 
 #### Java异常类层次
 
-![image-20200623113803449](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623113803449.png)
+![image-20200623113803449](typora-user-images/image-20200623113803449.png)
 
 ### 异常处理机制
 
@@ -1007,7 +1007,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	该方法由对象的hashCode值决定存储位置。如果两元素的equals()方法返回true，但hashCode值不同，就可以添加到HashSet里，存储位置不同。
 
-![image-20200623211434645](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623211434645.png)
+![image-20200623211434645](typora-user-images/image-20200623211434645.png)
 
 ​	遍历集合：迭代器Iterator方法和for each方法，常用后者。
 
@@ -1021,7 +1021,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	TreeSet会调用集合元素的compareTo方法比较元素间的大小，将集合元素按照升序排列。
 
-![image-20200623214122880](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623214122880.png)
+![image-20200623214122880](typora-user-images/image-20200623214122880.png)
 
 ​	基础用法与HashSet一致。在使用迭代器时需要添加相应的泛型。Iterator\<Integer>
 
@@ -1033,7 +1033,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	List有序可重复，每个元素有一个对应的索引，默认按元素的添加顺序设置元素的索引，且可通过索引操作集合元素。ArrayList继承自List接口，最常用。
 
-![image-20200623221306677](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623221306677.png)
+![image-20200623221306677](typora-user-images/image-20200623221306677.png)
 
 ​	使用list.get(x)访问编号为x的元素；list.add(1,"f")指定位置插入数据；list.addAll(2,list2)指定位置插入集合。list.subList(2, 4)列表的截取，截取时包含开始时的索引，不包含结束时的索引。
 
@@ -1047,7 +1047,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	Java中Map是个接口，通常使用的是HashMap
 
-![image-20200623224513063](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623224513063.png)
+![image-20200623224513063](typora-user-images/image-20200623224513063.png)
 
 ​	遍历map集合与之前不同，要用map.keySet()获取key的集合后使用for each方法遍历。或map.entrySet()方法。
 
@@ -1061,11 +1061,11 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	Collections中提供了大量方法对集合元素进行排序、查询和修改等操作，还提供了对集合对象设置不可变、对集合对象实现同步控制等方法。
 
-![image-20200623232150834](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623232150834.png)
+![image-20200623232150834](typora-user-images/image-20200623232150834.png)
 
-![image-20200623234009895](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623234009895.png)
+![image-20200623234009895](typora-user-images/image-20200623234009895.png)
 
-![image-20200623234750801](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200623234750801.png)
+![image-20200623234750801](typora-user-images/image-20200623234750801.png)
 
 ​	示例代码参见 [Test7.java](Day 10\Test7.java) 
 
@@ -1140,7 +1140,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	枚举类的方法：
 
-![image-20200624205404474](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200624205404474.png)
+![image-20200624205404474](typora-user-images/image-20200624205404474.png)
 
 ​	比较重要的是compareTo方法
 
@@ -1180,7 +1180,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	File 类中的方法:
 
-![image-20200625101403126](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200625101403126.png)
+![image-20200625101403126](typora-user-images/image-20200625101403126.png)
 
 ​	示例代码参见 [Test.java](Day 12\Test.java) 
 
@@ -1196,11 +1196,11 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	处理流的40多个类都是从下面的四个基类派生出的
 
-![image-20200625191031542](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200625191031542.png)
+![image-20200625191031542](typora-user-images/image-20200625191031542.png)
 
 #### IO流体系
 
-![image-20200625192035962](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200625192035962.png)
+![image-20200625192035962](typora-user-images/image-20200625192035962.png)
 
 ### 文件流
 
@@ -1264,7 +1264,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	示例代码参见 [Test3.java](Day 13\Test3.java) 
 
-![image-20200626175131395](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200626175131395.png)
+![image-20200626175131395](typora-user-images/image-20200626175131395.png)
 
 ### 打印流
 
@@ -1278,7 +1278,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 ​	DataInputStream的方法有：
 
-![image-20200626192514156](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200626192514156.png)
+![image-20200626192514156](typora-user-images/image-20200626192514156.png)
 
 ​	将上述方法中的read改为write即为DataOutputStream对应的方法。
 
@@ -1334,7 +1334,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 #### Class类常用方法
 
-![image-20200627151411883](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200627151411883.png)
+![image-20200627151411883](typora-user-images/image-20200627151411883.png)
 
 #### 实例化Class对象
 
@@ -1546,7 +1546,7 @@ JDK 5 以后Java增加了泛型，集合可以记住容器中对象的数据类�
 
 - 死亡：线程完成了它的全部工作（自然死亡）或线程被提前强制性地中止  （强制死亡）
 
-![image-20200628164613177](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200628164613177.png)
+![image-20200628164613177](typora-user-images/image-20200628164613177.png)
 
 ### 线程的同步与死锁
 
