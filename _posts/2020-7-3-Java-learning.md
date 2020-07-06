@@ -43,9 +43,9 @@ description: Java 学习
 
 ​	关键字为被Java赋予了特殊含义，作专门用途，特点为其中的所有字符为小写。通俗来说关键字表示了程序中某部分的性质或含义（e.g. public 公共；void 不返回值;4；static 静态）
 
-![image-20200616165155958](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616165155958.png)
+![image-20200616165155958](typora-user-images\image-20200616165155958.png)
 
-![image-20200616165645018](C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20200616165645018.png)
+![image-20200616165645018](\typora-user-images\image-20200616165645018.png)
 
 ### 保留字
 
